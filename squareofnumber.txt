@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    int n;
+    cout<<"Enter a number \n";
+    cin>>n;
+    int x=n,i=0,ans=0;
+    while(x){
+        if(x & 1){
+            ans+=n<<i;
+        }
+        i++;
+        x=x>>1;
+
+    }
+cout<<"Ans"<<ans;
+return 0;
+}
