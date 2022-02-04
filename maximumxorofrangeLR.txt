@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int l,r;
+	std::cout << "Enter the range" << std::endl;
+	std::cin >> l>>r;
+	int res=l^r,count=0;
+	while(res){
+	    res=res>>1;
+	    count++;
+	}
+	int fres=(1<<count)-1;
+	cout<<"Final result \n"<<fres;
+	return 0;
+}
